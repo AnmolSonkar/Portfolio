@@ -15,7 +15,7 @@
                     </div>
                     <div class="relative mt-2 ml-72 text-gray-600" data-aos="fade">
                         <input
-                            class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                            class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent"
                             type="search" name="search" placeholder="Search">
                         <button type="submit" class="absolute right-0 top-0 mt-3 mr-5">
                             <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -42,24 +42,21 @@
                         style="background-color:#121212">
                         <div class="flex">
                             <div>
-                                <img class="object-fill inset-0   bg-cover bg-center z-0" src="storage/Blogs/Blog1.jpg">
+                                <img class="object-fill inset-0   bg-cover bg-center z-0" src="storage/Blogs/Blog1/0.png">
 
                                 <div
                                     class=" opacity-0 hover:opacity-100 bg-black bg-opacity-90 duration-300 absolute inset-0 z-10 flex justify-center items-center">
-                                    <a id="click" href="#"
+                                    <a id="click" href="{{ ('/Blog1') }}"
                                         class="bg-green-600 shadow-lg focus:outline-none  rounded p-1.5 mt-3 pl-3 pr-3">
                                         Read more</a></div>
                             </div>
                         </div>
                         <div class="p-2">
                             <div class="flex text-left  flex-col">
-                                <a href="Blog1.html" class="hover:underline text-lg font-medium">React, Bootstrap, and
-                                    Angular- The
-                                    Basics</a>
-                                <p class="text-sm ">Blog post intro goes here. Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit. Quisque vel sapien quis nulla dictum euismod. Vivamus sed mi vitae dui iaculis
-                                    venenatis...
+                                <a class="hover:underline text-lg font-medium">How to get fully free Domain +
+                                    Hosting + SSL for lifetime</a>
+                                <p class="text-sm ">InfinityFree is fully featured, completely free website hosting initiative powered by iFast
+                                    Net...
                                 </p>
                             </div>
                         </div>
@@ -74,83 +71,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div data-aos="fade" data-aos-duration="400">
-                    <div class="zoom  rounded  text-gray-200 hover:text-white  shadow-lg flex flex-col mx-auto"
-                        style="background-color:#121212">
-                        <div class="flex">
-                            <div>
-                                <img class="object-fill inset-0   bg-cover bg-center z-0" src="storage/Blogs/Blog1.jpg">
-
-                                <div
-                                    class=" opacity-0 hover:opacity-100 bg-black bg-opacity-90 duration-300 absolute inset-0 z-10 flex justify-center items-center">
-                                    <a id="click" href="#"
-                                        class="bg-green-600 shadow-lg focus:outline-none  rounded p-1.5 mt-3 pl-3 pr-3">
-                                        Read more</a></div>
-                            </div>
-                        </div>
-                        <div class="p-2">
-                            <div class="flex text-left  flex-col">
-                                <a href="Blog1.html" class="hover:underline text-lg font-medium">React, Bootstrap, and
-                                    Angular- The
-                                    Basics</a>
-                                <p class="text-sm ">Blog post intro goes here. Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit. Quisque vel sapien quis nulla dictum euismod. Vivamus sed mi vitae dui iaculis
-                                    venenatis...
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-2 mb-2 text-sm">
-                            <span style="background-color: #1E1E1E;"
-                                class="shadow-lg  text-white  rounded-2xl p-3  py-1.5">
-                                <span class="far fa-clock "></span> June 18, 2021</span>
-
-                            <span style="background-color: #1E1E1E;"
-                                class="shadow-lg  text-white ml-2  rounded-2xl p-3  py-1.5">
-                                <span class="fas fa-comment me-2"></span> 12 Comments</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="fade" data-aos-duration="600">
-                    <div class="zoom  rounded  text-gray-200 hover:text-white  shadow-lg flex flex-col mx-auto"
-                        style="background-color:#121212">
-                        <div class="flex">
-                            <div>
-                                <img class="object-fill inset-0   bg-cover bg-center z-0" src="storage/Blogs/Blog1.jpg">
-
-                                <div
-                                    class=" opacity-0 hover:opacity-100 bg-black bg-opacity-90 duration-300 absolute inset-0 z-10 flex justify-center items-center">
-                                    <a id="click" href="#"
-                                        class="bg-green-600 shadow-lg focus:outline-none  rounded p-1.5 mt-3 pl-3 pr-3">
-                                        Read more</a></div>
-                            </div>
-                        </div>
-                        <div class="p-2">
-                            <div class="flex text-left  flex-col">
-                                <a href="Blog1.html" class="hover:underline text-lg font-medium">React, Bootstrap, and
-                                    Angular- The
-                                    Basics</a>
-                                <p class="text-sm ">Blog post intro goes here. Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit. Quisque vel sapien quis nulla dictum euismod. Vivamus sed mi vitae dui iaculis
-                                    venenatis...
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-2 mb-2 text-sm">
-                            <span style="background-color: #1E1E1E;"
-                                class="shadow-lg  text-white  rounded-2xl p-3  py-1.5">
-                                <span class="far fa-clock "></span> June 18, 2021</span>
-
-                            <span style="background-color: #1E1E1E;"
-                                class="shadow-lg  text-white ml-2  rounded-2xl p-3  py-1.5">
-                                <span class="fas fa-comment me-2"></span> 12 Comments</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>

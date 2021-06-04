@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SocialLoginController;
+use Livewire\Livewire;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,3 +52,8 @@ Route::get('/google/callback',[SocialLoginController::class,"handleGoogleBack"])
 
 Route::get('/github',[SocialLoginController::class,"redirectToGithub"]);
 Route::get('/github/callback',[SocialLoginController::class,"handleGithubBack"]);
+
+Route::get('/Blog1',function()
+{
+    return view('livewire.blog1');
+});
