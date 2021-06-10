@@ -3821,7 +3821,13 @@ document.getElementById("year").innerHTML = year; //Initialize aos
 AOS.init({
   duration: 400,
   easing: "ease-in-quad"
-});
+}); //load-more
+
+window.onscroll = function (ev) {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    window.livewire.emit('load-more');
+  }
+};
 
 /***/ }),
 

@@ -50,6 +50,12 @@
                             <a href="{{ ('/Projects') }}" id="item" class="block px-4 py-2  rounded-md">Projects</a>
                             <a href="{{ ('/Resume') }}" id="item" class="block px-4 py-2  rounded-md">Resume</a>
                             <a href="{{ ('/Blog') }}" id="item" class="block px-4 py-2  rounded-md">Blog</a>
+
+                            @if( Auth::user() && Auth::user()->email=='anmolsonkar742@gmail.com')
+                            <a href="{{ ('/Create') }}" id="item" class="block px-4 py-2  rounded-md">Create</a>
+                            @endif
+
+
                             <a href="{{ ('/Contact') }}" id="item" class="block px-4 py-2  rounded-md">Contact</a>
                             <!-- Authentication -->
                             <form method="POST" action="{{ route('logout') }}">
@@ -149,6 +155,9 @@
                     <a href="{{ ('/Resume') }}" class="pr-7 hover:text-white">Resume</a>
                     <a href="{{ ('/Blog') }}" class="pr-7 hover:text-white">Blog</a>
                     <a href="{{ ('/Contact') }}" class="pr-7 hover:text-white">Contact</a>
+                    @if(Auth::user() && Auth::user()->email=='anmolsonkar742@gmail.com')
+                    <a href="{{ ('/Create') }}" class="pr-7 hover:text-white">Create</a>
+                    @endif
 
                     @if (Route::has('login'))
                     @auth
@@ -213,7 +222,6 @@
                     @else
                     <a href="{{ route('login') }}" class="pr-7 hover:text-white">Log in</a>
                     @if (Route::has('register'))
-                    {{-- <a href="{{ route('register') }}" class="pr-7 hover:text-white">Register</a> --}}
                     <a href="{{ ('register') }}">
                         <button id="click"
                             class="bg-green-600 shadow-lg focus:outline-none  rounded p-1.5 -mt-2  pl-3 pr-3">

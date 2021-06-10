@@ -11,18 +11,35 @@
                 </p>
 
                 <div class="relative mt-5   mx-auto text-gray-600" data-aos="fade">
-                    <input
-                        class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent"
-                        type="search" name="search" placeholder="Search">
-                    <button type="submit" class="absolute  mt-3 -ml-8">
-                        <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
-                            viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
-                            xml:space="preserve" width="512px" height="512px">
-                            <path
-                                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
-                        </svg>
-                    </button>
+
+                    <i class="absolute ml-16 pl-8  fa fa-search text-sm my-auto  text-gray-400 left-0 p-2.5 focus:outline-none"
+                        aria-hidden="true" wire:target="search" wire:loading.remove></i>
+
+                    <input id="Search"
+                        class="border-2 border-gray-300 bg-white h-10 px-9   rounded-lg text-sm focus:outline-none focus:ring-2  hover:shadow focus:ring-green-600 focus:border-transparent"
+                        type="search" name="search" wire:model.debounce.300ms="search" placeholder="Search">
+
+
+
+                    <h1>
+                        <img src="storage/images/Search.svg" wire:target="search" wire:loading
+                            class="w-8 absolute left-0 ml-20 -mt-9 " alt="Loading...">
+                    </h1>
+
+                    <div class="p-1.5 mr-3">
+                        <div class="text-sm bg-white text-gray-600  mx-auto rounded w-64 mt-4">
+                            <ul class="shadow-md rounded">
+                                @foreach ($results as $result)
+                                <li class="p-1">
+                                    <div class="p-1 rounded-md text-left ml-2 hover:bg-gray-100 active:bg-white">
+                                        <h1><a href="blog"> {{$result->Heading}}</a></h1>
+                                    </div>
+                                </li>
+                                @endforeach
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -30,12 +47,16 @@
         <div class="p-1 w-10/12  mx-auto">
 
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-9  mt-9 mb-9 ">
+                @foreach ($blogs as $blog)
+
+
                 <div data-aos="fade-up">
                     <div class="zoom  rounded  text-gray-200 hover:text-white  shadow-lg flex flex-col mx-auto"
                         style="background-color:#121212">
                         <div class="flex">
                             <div>
-                                <img class="object-fill inset-0   bg-cover bg-center z-0" src="storage/Blogs/Blog1/0.png">
+                                <img class="object-fill inset-0   bg-cover bg-center z-0"
+                                    src="storage/Blogs/Blog1/0.png">
 
                                 <div
                                     class=" opacity-0 hover:opacity-100 bg-black bg-opacity-90 duration-300 absolute inset-0 z-10 flex justify-center items-center">
@@ -46,25 +67,39 @@
                         </div>
                         <div class="p-2">
                             <div class="flex text-left  flex-col">
-                                <a href="{{ ('/Blog1') }}" class="hover:underline text-lg font-medium">How to get fully free Domain +
-                                    Hosting + SSL for lifetime</a>
-                                <p class="text-sm ">  InfinityFree is fully featured, completely free website hosting initiative powered by iFast
-                                    Net...
+                                <a href="{{ ('/Blog1') }}"
+                                    class="hover:underline text-lg font-medium">{{ $blog->Heading }}</a>
+                                <p class="text-sm "> {{ $blog->Paragraph }}
                                 </p>
                             </div>
                         </div>
                         <div class="p-2 mb-2 text-sm">
                             <span style="background-color: #1E1E1E;"
                                 class="shadow-lg  text-white  rounded-2xl p-3  py-1.5">
-                                <span class="far fa-clock "></span> June 18, 2021</span>
+                                <span class="far fa-clock">
+                                </span><span> {{date('M d, Y', strtotime( $blog->upload_at)) }}</span>
 
-                            <span style="background-color: #1E1E1E;"
-                                class="shadow-lg  text-white ml-2  rounded-2xl p-3  py-1.5">
-                                <span class="fas fa-comment me-2"></span> 12 Comments</span>
+                                <span style="background-color: #1E1E1E;"
+                                    class="shadow-lg  text-white ml-2  rounded-2xl p-3  py-1.5">
+                                    <span class="fas fa-comment me-2"></span> 12 Comments</span>
                         </div>
                     </div>
                 </div>
+                @endforeach
+            </div>
+            <div class="flex justify-center">
+                <h1 wire:loading>
+                    <img src="storage/images/Loadmore.svg" class="w-12 opacity-50" alt="Loading...">
+                </h1>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+    #Search::-webkit-search-cancel-button {
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+    }
+</style>

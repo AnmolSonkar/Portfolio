@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SocialLoginController;
+use App\Http\Controllers\Create;
 use Livewire\Livewire;
 
 /*
@@ -47,13 +48,21 @@ Route::get('/Contact', function () {
     return view('livewire.contact');
 });
 
-Route::get('/google',[SocialLoginController::class,"redirectToGoogle"]);
-Route::get('/google/callback',[SocialLoginController::class,"handleGoogleBack"]);
+Route::get('/google', [SocialLoginController::class, "redirectToGoogle"]);
+Route::get('/google/callback', [SocialLoginController::class, "handleGoogleBack"]);
 
-Route::get('/github',[SocialLoginController::class,"redirectToGithub"]);
-Route::get('/github/callback',[SocialLoginController::class,"handleGithubBack"]);
+Route::get('/github', [SocialLoginController::class, "redirectToGithub"]);
+Route::get('/github/callback', [SocialLoginController::class, "handleGithubBack"]);
 
-Route::get('/Blog1',function()
-{
+Route::get('/Blog1', function () {
     return view('livewire.blog1');
 });
+
+
+
+Route::get('Addblog',[addblog::class,'addblog']);
+Route::post('add',[addblog::class,'add']);
+
+
+Route::get('Create',[Create::class,'create']);
+Route::post('add',[Create::class,'add']);
