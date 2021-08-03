@@ -80,7 +80,7 @@
                                 </li>
                             </a>
                             <a href="https://www.anmol.42web.io/" target="_blank" title="Website"
-                                class="text-white hover:underline my-auto ml-2">anmol.42web.io</a>
+                                class="text-white hover:underline my-auto ml-2">not available</a>
                         </div>
 
                     </ul>
