@@ -99,7 +99,7 @@
                         </svg>
                     </button>
                     <div class="pb-2 float-right">
-                        <a href="https://www.linkedin.com/in/anmolsonkar742" title="Linkedin" target="_blank">
+                        <a href="https://www.linkedin.com/in/anmol-sonkar" title="Linkedin" target="_blank">
                             <span><i class="fab fa-linkedin-in hover:text-white"></i></span>
                         </a>
                         <a href="https://github.com/AnmolSonkar" title="Github" target="_blank">
@@ -130,7 +130,7 @@
             <div class="fixed z-10 w-full " style="background-color: #1F1F1F;">
 
                 <ul class="float-left p-2 mt-3  pl-10 text-gray-200" data-aos="fade">
-                    <a href="https://www.linkedin.com/in/anmolsonkar742" title="Linkedin" target="_blank">
+                    <a href="https://www.linkedin.com/in/anmol-sonkar" title="Linkedin" target="_blank">
                         <span><i class="fab fa-linkedin-in hover:text-white"></i></span>
                     </a>
                     <a href="https://github.com/AnmolSonkar" title="Github" target="_blank">

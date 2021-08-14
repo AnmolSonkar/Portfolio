@@ -8,7 +8,7 @@
         </p>
         <p class="text-center">
             Designed & Developed By
-            <a class="hover:underline" href="https://www.linkedin.com/in/anmolsonkar742">Anmol Sonkar</a>
+            <a class="hover:underline" href="https://www.linkedin.com/in/anmol-sonkar">Anmol Sonkar</a>
         </p>
     </div>
 </div>

@@ -38,14 +38,14 @@
 
                         <ul class="text-white mt-5">
                             <div class="flex mb-3 ">
-                                <a href="https://www.linkedin.com/in/anmolsonkar742" title="Linkedin" target="_blank">
+                                <a href="https://www.linkedin.com/in/anmol-sonkar" title="Linkedin" target="_blank">
                                     <li id="socialbtn2"
                                         class="flex justify-center p-2 text-lg rounded shadow-lg hover:text-white">
                                         <i class="fab fa-linkedin-in "></i>
                                     </li>
 
                                 </a>
-                                <a href="https://www.linkedin.com/in/anmolsonkar742/" title="Linkedin" target="_blank"
+                                <a href="https://www.linkedin.com/in/anmol-sonkar/" title="Linkedin" target="_blank"
                                     class=" text-white hover:underline my-auto ml-2">linkedin.com/in/anmolsonkar742</a>
                             </div>
 
@@ -93,15 +93,13 @@
                     <h1 class="text-gray-800  text-xl font-medium  border-b border-gray-800 h-10">CAREER SUMMARY
                     </h1>
                     <h1 class="text-gray-800   mt-4">
-                        A dedicated and personable computer science student and full stack web developer adept at
+                        A dedicated and personable full stack web developer adept at
                         building
                         responsive web applications from front to back. Passionate about learning new technologies,
                         bringing
                         ideas to life, and working with dedicated teams to build efficient and robust applications
                         suited to the
-                        user's needs. Currently, I am pursuing bachelor degree in Computer Science from Keshav
-                        Mahavidyalaya
-                        (University of Delhi).
+                        user's needs.
                     </h1>
                 </div>
 
@@ -112,8 +110,10 @@
 
                     <h1 class="text-gray-800 text-lg font-medium mt-4">B.Sc (Hons) Computer Science</h1>
                     <p class="text-gray-800">Keshav Mahavidyalaya (University of Delhi)</p>
-                    <p class="text-gray-500 text-sm ">2018 - Present</p>
-
+                    <div class="flex w-11/12 md:w-6/12">
+                        <p class="text-gray-500 text-sm ">2018 - 2021</p>
+                        <p class="text-gray-500 text-sm ml-auto">7.37 CGPA</p>
+                    </div>
 
                     <h1 class="text-gray-800 text-lg font-medium mt-4">Class XII</h1>
                     <p class="text-gray-800">Board of School Education Uttarakhand, Uttarakhand</p>

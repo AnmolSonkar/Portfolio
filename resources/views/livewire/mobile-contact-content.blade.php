@@ -18,7 +18,7 @@
             <p class="p-6 py-0 pb-2  mx-auto" data-aos="fade">You can also find me on the following channels
             </p>
             <ul class="flex justify-center  py-4 mx-auto text-gray-200">
-                <a href="https://www.linkedin.com/in/anmolsonkar742" title="Linkedin">
+                <a href="https://www.linkedin.com/in/anmol-sonkar" title="Linkedin">
                     <li id="socialbtn" data-aos="fade"
                         class="p-2 pl-3.5 ml-3 pr-3.5 text-xl  rounded mr-3 shadow-lg hover:text-white"><i
                             class="fab fa-linkedin-in "></i></li>
