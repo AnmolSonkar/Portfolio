@@ -159,6 +159,14 @@
                     <h1 class="text-gray-800 text-lg font-medium mt-4">
                         <a target="_blank"
                             href="https://www.freecodecamp.org/certification/anmolsonkar/responsive-web-design"
+                            class="hover:underline">Responsive Web Design course</a>
+                    </h1>
+                    <p class="text-gray-800">Sololearn</p>
+                    <p class="text-gray-500 text-sm ">Issued Jun 2021</p>
+                    
+                    <h1 class="text-gray-800 text-lg font-medium mt-4">
+                        <a target="_blank"
+                            href="https://www.freecodecamp.org/certification/anmolsonkar/responsive-web-design"
                             class="hover:underline">Responsive Web Design</a>
                     </h1>
                     <p class="text-gray-800">freeCodeCamp</p>

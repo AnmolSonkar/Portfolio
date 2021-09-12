@@ -164,6 +164,16 @@
                             CERTIFICATES
                         </h1>
 
+
+                        <h1 class="text-gray-800 text-lg font-medium mt-4">
+                            <a target="_blank"
+                                href="https://www.freecodecamp.org/certification/anmolsonkar/responsive-web-design"
+                                class="hover:underline">Responsive Web Design course</a>
+                        </h1>
+                        <p class="text-gray-800">Sololearn</p>
+                        <p class="text-gray-500 text-sm ">Issued Jun 2021</p>
+
+
                         <h1 class="text-gray-800 text-lg font-medium mt-4">
                             <a target="_blank"
                                 href="https://www.freecodecamp.org/certification/anmolsonkar/responsive-web-design"
@@ -286,6 +296,8 @@
                         </div>
 
                         <h1 class="text-gray-800 text-lg font-medium mt-4">Frameworks</h1>
+                        <h1 class="text-gray-800 text-sm  mt-2">React.js</h1>
+                        <p class="text-gray-500" style="font-size: 12px;">front-end framework</p>
                         <h1 class="text-gray-800 text-sm  mt-2">Tailwindcss</h1>
                         <p class="text-gray-500" style="font-size: 12px;">front-end framework</p>
                         <h1 class="text-gray-800 text-sm  mt-2">Bootstrap5</h1>
