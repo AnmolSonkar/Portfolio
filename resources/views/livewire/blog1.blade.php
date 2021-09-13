@@ -36,11 +36,11 @@
                         <div class="p-2 mb-2 mx-auto text-sm" data-aos="fade">
                             <span style="background-color: #1E1E1E;"
                                 class="shadow-lg  text-white  rounded-2xl p-3  py-1.5">
-                                <span class="far fa-clock mr-1 "></span> June 18, 2021</span>
+                                <span class="far fa-clock mr-1 "></span> Sept 13, 2021</span>
 
                             <span style="background-color: #1E1E1E;"
                                 class="shadow-lg  text-white ml-2  rounded-2xl p-3  py-1.5">
-                                <span class="fas fa-comment mr-1"></span> 12 Comments</span>
+                                <span class="fas fa-comment mr-1"></span> 0 Comments</span>
                         </div>
                     </div>
                 </div>
